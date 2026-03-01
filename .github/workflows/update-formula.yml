@@ -27,7 +27,7 @@ jobs:
       - name: Check if update needed
         id: check
         run: |
-          CURRENT=$(grep -oP 'qontoctl-\K[0-9]+\.[0-9]+\.[0-9]+[^"]*' Formula/qontoctl.rb | head -1)
+          CURRENT=$(sed -n 's/.*qontoctl-\([0-9][0-9.]*[0-9]\)\.tgz.*/\1/p' Formula/qontoctl.rb)
           echo "Current formula version: $CURRENT"
           echo "Latest npm version: $VERSION"
           if [ "$CURRENT" = "$VERSION" ]; then
