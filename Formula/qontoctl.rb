@@ -1,8 +1,8 @@
 class Qontoctl < Formula
   desc "CLI and MCP server for the Qonto banking API"
   homepage "https://qontoctl.org"
-  url "https://registry.npmjs.org/qontoctl/-/qontoctl-0.2.0.tgz"
-  sha256 "ea6219ada7d4ef20e77f739e68f42194b6c6c388ea303a9c104df0ec9ffa87e4"
+  url "https://registry.npmjs.org/qontoctl/-/qontoctl-0.4.0.tgz"
+  sha256 "dd23095f3371dd4cffa210ee6ba893a2a317cadb2c48e44fba45b99bd1a7692d"
   license "AGPL-3.0-only"
 
   depends_on "node@24"
